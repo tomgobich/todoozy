@@ -1,0 +1,63 @@
+@import "variables";
+
+header {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 8px 0;
+  margin: $spacer-md 0 $spacer-xl;
+  box-shadow: 0 1px $spacer-md $white-dark;
+
+  &:before {
+    content: " ";
+    width: 100%;
+    height: $spacer-md;
+    background-color: $purple-light;
+    background-image: linear-gradient(to right, $purple-light, adjust-hue($purple-dark, 20));
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+  }
+
+  a {
+    color: $black-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+      color: $black-dark;
+    }
+  }
+
+  .header-logo {
+    width: 220px;
+
+    .logo {
+      width: 100%;
+      max-width: 170px;
+    }
+  }
+  input.search {
+    width: calc(100% - 440px);
+    height: 40px;
+    padding: 0 $spacer-lg;
+    transition: width 1s ease;
+  }
+
+  nav {
+    width: 170px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

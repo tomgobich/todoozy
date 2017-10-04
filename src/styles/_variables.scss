@@ -1,15 +1,26 @@
 
 // Start with assigning color names to specific hex values.
-$white:  whitesmoke !default;
-$black:  #000 !default;
-$red:    #d9534f !default;
-$orange: #f0ad4e !default;
-$yellow: #ffd500 !default;
-$green:  #5cb85c !default;
-$blue:   #0275d8 !default;
-$teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
-$purple: #613d7c !default;
+$white:  white !default;
+$black:  black !default;
+
+$white-light:               #ecf0f1 !default;
+$white-dark:                #bdc3c7 !default;
+$black-light:               #34495e !default;
+$black-dark:                #2c3e50 !default;
+
+$green-light:               #2ecc71 !default;
+$green-dark:                #27ae60 !default;
+$blue-light:                #3498db !default;
+$blue-dark:                 #2980b9 !default;
+$purple-light:              #9b59b6 !default;
+$purple-dark:               #8e44ad !default;
+$yellow-light:              #f1c40f !default;
+$yellow-dark:               #f39c12 !default;
+$orange-light:              #e67e22 !default;
+$orange-dark:               #d35400 !default;
+$red-light:                 #e74c3c !default;
+$red-dark:                  #c0392b !default;
+
 
 // Create grayscale
 $gray-dark:                 #292b2c !default;
@@ -19,12 +30,12 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
-$brand-success:             $green !default;
-$brand-info:                $teal !default;
-$brand-warning:             $orange !default;
-$brand-danger:              $red !default;
-$brand-inverse:             $gray-dark !default;
+$brand-primary:             $green-light  !default;
+$brand-success:             $green-light  !default;
+$brand-info:                $blue-light   !default;
+$brand-warning:             $orange-light !default;
+$brand-danger:              $red-light    !default;
+$brand-inverse:             $black-dark   !default;
 
 // Body
 $body-bg:       $white !default;
@@ -52,3 +63,9 @@ $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
+
+$spacer-xs: 2px;
+$spacer-sm: 4px;
+$spacer-md: 6px;
+$spacer-lg: 15px;
+$spacer-xl: 30px;
